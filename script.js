@@ -1,10 +1,10 @@
     // button click handler :
-    document.getElementById('search-button').addEventListener('click', function () {
+const searchButton = () => {
     let searchText = document.getElementById('search-field');
-    let searchValue = searchText.value;
-    searchText.value = '';
-    searchFunction(searchValue);
-    });
+     let searchValue = searchText.value;
+     searchText.value = '';
+     searchFunction(searchValue);
+}
     // books details :
     const searchFunction = (searchValue) => {
     url = `https://openlibrary.org/search.json?q=${searchValue}`;
